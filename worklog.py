@@ -9,6 +9,7 @@ def clear():
 
 def main():
 
+
     while True:
 
         print("Welcome to Your Work Log")
@@ -24,14 +25,21 @@ def main():
             print("""
     a) Find Task by exact date
     b) Find Task by Range of dates
+    f) Find Task by Minutes Spent
     c) Find Task by a text search
     d) Find Task by regular Expressions Pattern
     e) Return To main menu
             """)
             ask = input(">")
             clear()
+            if ask.lower() == "a":
+                mate.search_date()
+            elif ask.lower() =="f":
+                mate.search_minutes()
+
+
         elif user_choice.lower() == "a":
-            mate = Task()
+
             mate.add_task()
             input("Just added Task press enter to go back to menu")
             clear()
@@ -48,4 +56,5 @@ def main():
 
 
 if __name__ == "__main__":
+    mate = Task()
     main()
