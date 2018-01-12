@@ -40,6 +40,8 @@ def main():
                 mate.search_text()
             elif ask.lower() == "d":
                 mate.search_pattern()
+            elif ask.lower() == "b":
+                mate.range_dates()
 
 
         elif user_choice.lower() == "a":
