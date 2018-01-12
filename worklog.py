@@ -36,6 +36,10 @@ def main():
                 mate.search_date()
             elif ask.lower() =="f":
                 mate.search_minutes()
+            elif ask.lower() == "c":
+                mate.search_text()
+            elif ask.lower() == "d":
+                mate.search_pattern()
 
 
         elif user_choice.lower() == "a":
