@@ -8,8 +8,10 @@ def clear():
 
 
 def main():
-
-
+    """
+    menu function which is the main function to ask users about
+    what they want
+    """
     while True:
 
         print("Welcome to Your Work Log")
@@ -34,7 +36,7 @@ def main():
             clear()
             if ask.lower() == "a":
                 mate.search_date()
-            elif ask.lower() =="f":
+            elif ask.lower() == "f":
                 mate.search_minutes()
             elif ask.lower() == "c":
                 mate.search_text()
@@ -42,10 +44,7 @@ def main():
                 mate.search_pattern()
             elif ask.lower() == "b":
                 mate.range_dates()
-
-
         elif user_choice.lower() == "a":
-
             mate.add_task()
             input("Just added Task press enter to go back to menu")
             clear()
@@ -55,10 +54,6 @@ def main():
         elif user_choice.lower() == "e":
             clear()
             main()
-
-
-
-
 
 
 if __name__ == "__main__":
