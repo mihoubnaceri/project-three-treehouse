@@ -78,7 +78,7 @@ class Task:
                     print("Minuest Spent : {}".format(helpers.my_dict[value][2]))
                     print("Notes :{} ".format(helpers.my_dict[value][3]))
                     print("{} out of {}".format(counter, helpers.find_counts(minutes)))
-                    ask = input("[N]ext    [E]dit    [R]eturn menu ")
+                    ask = input("[N]ext [R]eturn menu ")
                     clear()
                     if ask.lower() == "n":
                         counter += 1
